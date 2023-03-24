@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh './Users/anindamukherjee/.jenkins/workspace/HeapDump_docker-shell_main/jenkins/build.sh'
+        sh '/Users/anindamukherjee/.jenkins/workspace/HeapDump_docker-shell_main/jenkins/build.sh'
       }
     }
     stage('Login') {
