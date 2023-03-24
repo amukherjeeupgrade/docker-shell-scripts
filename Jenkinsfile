@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'perf' }
+  agent any
   options {
     buildDiscarder(logRotator(numToKeepStr: '5'))
   }
