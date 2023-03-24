@@ -9,23 +9,23 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh './jenkins/build.sh'
+        sh './Users/anindamukherjee/.jenkins/workspace/HeapDump_docker-shell_main/jenkins/build.sh'
       }
     }
     stage('Login') {
       steps {
-        sh './jenkins/login.sh'
+        sh './Users/anindamukherjee/.jenkins/workspace/HeapDump_docker-shell_main/jenkins/login.sh'
       }
     }
     stage('Push') {
       steps {
-        sh './jenkins/push.sh'
+        sh './Users/anindamukherjee/.jenkins/workspace/HeapDump_docker-shell_main/jenkins/push.sh'
       }
     }
   }
   post {
     always {
-      sh './jenkins/logout.sh'
+      sh './Users/anindamukherjee/.jenkins/workspace/HeapDump_docker-shell_main/jenkins/logout.sh'
     }
   }
 }
